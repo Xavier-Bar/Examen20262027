@@ -13,4 +13,14 @@ public class Trail extends Sorties{
     public String toCSV() {
         return "Trail;" + getNom() + ";" + getDistance() + ";" + getTemps() + ";" + deniveler;
     }
+
+    @Override
+    public double allure(){
+        return getTemps() / getDistance();
+    }
+
+    @Override
+    public double kmEffort(){
+        return getDistance() + (deniveler/100);
+    }
 }

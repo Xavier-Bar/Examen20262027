@@ -13,4 +13,14 @@ public class Fractionne extends Sorties{
     public String toCSV() {
         return "Fractionné;" + getNom() + ";" + getDistance() + ";" + getTemps() + ";" + nbRepetition;
     }
+
+    @Override
+    public double allure(){
+        return getTemps() / getDistance();
+    }
+
+    @Override
+    public double kmEffort(){
+        return getDistance();
+    }
 }

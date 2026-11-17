@@ -13,4 +13,14 @@ public class Course extends Sorties{
     public String toCSV() {
         return "Course sur route;" + getNom() + ";" + getDistance() + ";" + getTemps() + ";" + competition;
     }
+
+    @Override
+    public double allure(){
+        return getTemps() / getDistance();
+    }
+
+    @Override
+    public double kmEffort(){
+        return getDistance();
+    }
 }

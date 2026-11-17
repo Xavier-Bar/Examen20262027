@@ -23,6 +23,10 @@ public abstract class Sorties {
 
     public abstract String toCSV();
 
+    public abstract double allure();
+
+    public abstract double kmEffort();
+
     @Override
     public String toString() {
         return "Nom : " + nom + "\nDistance : " + distance + "km\nTemps : " + temps + "min";
