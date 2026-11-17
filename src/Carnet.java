@@ -37,8 +37,14 @@ public class Carnet {
         return total;
     }
 
-    public double denivelerTotal() {
-        return 4.0; // A completer
+    public int deniveleTotal() {
+        int total = 0;
+        for (Sorties s : this.sorties){
+            if (s instanceof Trail t){
+                total += t.getDeniveler();
+            }
+        }
+        return total;
     }
 
     public void exporterCSV(String nomFichier) {

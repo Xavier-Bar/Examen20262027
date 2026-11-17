@@ -5,6 +5,11 @@ public class Trail extends Sorties{
         super(nom, distance, temps);
         this.deniveler = deniveler;
     }
+
+    public int getDeniveler() {
+        return deniveler;
+    }
+
     @Override
     public String toString() {
         return "Trail : " + super.toString() + "\nDénivelé positif : " + deniveler + "m";
