@@ -1,7 +1,7 @@
-public class Course extends Sorties{
+public class CourseRoute extends Sorties{
     private boolean competition;
 
-    public Course(String nom, double distance, int temps, boolean competition) {
+    public CourseRoute(String nom, double distance, int temps, boolean competition) {
         super(nom, distance, temps);
         this.competition = competition;
     }
